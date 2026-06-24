@@ -15,8 +15,8 @@
   nav .brand{font-weight:800;letter-spacing:1.6px;font-size:12.5px;text-transform:uppercase}
   nav .brand span{color:var(--electric)}
   nav .tag{font-size:11px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:var(--muted);text-align:right}
-  .subnav{position:sticky;top:50px;z-index:40;display:flex;gap:8px;justify-content:center;flex-wrap:wrap;padding:11px 16px;background:rgba(11,11,20,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-  .subnav a{font-size:12px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted);text-decoration:none;padding:7px 15px;border-radius:30px;transition:color .15s,background .15s}
+  .subnav{position:sticky;top:50px;z-index:40;display:flex;gap:6px;justify-content:center;flex-wrap:wrap;padding:11px 16px;background:rgba(11,11,20,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .subnav a{font-size:12px;font-weight:700;letter-spacing:1.1px;text-transform:uppercase;color:var(--muted);text-decoration:none;padding:7px 13px;border-radius:30px;transition:color .15s,background .15s}
   .subnav a:hover{color:var(--paper);background:rgba(255,92,171,.14)}
   .hero{text-align:center;padding:80px 0 40px;background:radial-gradient(900px 440px at 50% -10%, rgba(255,92,171,.18), transparent 70%),linear-gradient(180deg,#1a1424 0%,var(--ink) 100%)}
   .eyebrow{font-size:12.5px;font-weight:700;letter-spacing:3.5px;text-transform:uppercase;color:var(--pink);margin-bottom:18px}
@@ -52,7 +52,9 @@
   .pair .c{background:var(--charcoal);border:1px solid var(--line);border-radius:16px;padding:24px 20px}
   .pair .c h3{font-size:18px;font-weight:800;margin-bottom:6px}
   .pair .c p{font-size:13.5px;color:#cdccdf;line-height:1.6}
-  .more{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .contact{text-align:center;font-size:18px;font-weight:700;margin-top:24px}
+  .contact a{color:var(--pink);text-decoration:none}
+  .more{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:26px}
   .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:30px;font-size:14px;font-weight:700;letter-spacing:.3px;text-decoration:none;transition:transform .15s,box-shadow .15s,border-color .15s}
   .btn.primary{background:var(--electric);color:#fff}
   .btn.primary:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(108,92,231,.4)}
@@ -71,36 +73,61 @@
   <div class="tag">Client Case Studies</div>
 </nav>
 <div class="subnav">
+  <a href="#overview">Overview</a>
+  <a href="#world">World</a>
   <a href="#character">Character</a>
   <a href="#music">Music</a>
-  <a href="#world">World</a>
+  <a href="#epk">Press Kit</a>
 </div>
 
 <header class="hero">
   <div class="wrap">
     <div class="eyebrow">NYXY · World Design</div>
     <h1>The world of NYXY.</h1>
-    <p class="sub">The character, the music, and the world she lives in. One futuristic producer and DJ, top to bottom.</p>
+    <p class="sub">The brand, the world, the character, the music, and the press kit. All of NYXY, in one scroll.</p>
   </div>
 </header>
 
 <main>
-<section id="character">
+<section id="overview">
   <div class="wrap">
-    <div class="shead"><div class="k">Character</div><h2>Meet NYXY.</h2><p>A futuristic music producer and DJ, and the shadow half of the light.</p></div>
-    <div class="feature"><img src="assets/nyxy_feature.jpg" alt="NYXY"></div>
+    <div class="shead"><div class="k">Overview &amp; Meaning</div><h2>NYXY.</h2></div>
     <div class="bio">
       <p>NYXY is a futuristic music producer and DJ, and a character in the LUCA IMMERSIVE world. Her work circles longing, light and shadow, machines, and complicated love.</p>
-      <p>In the story she is the shadow half of The Field, the mirror to LUCA's light. Inward gravity to his outward motion. She reveals truth by reflecting light, the way her lenses give nothing back but a reflection of the room.</p>
+      <p>Her meaning is in her name's opposite: she is the shadow half of The Field, the mirror to LUCA's light. Inward gravity to his outward motion. She reveals truth by reflecting it back, the way her lenses give nothing away but the room returned.</p>
     </div>
+  </div>
+</section>
 
-    <div class="shead mt"><h2>All white, all signal.</h2><p>White hood, platinum hair, mirrored goggles, hot pink. The exact inverse of LUCA.</p></div>
+<section id="world">
+  <div class="wrap">
+    <div class="shead"><div class="k">World Design</div><h2>Light's shadow.</h2><p>NYXY's half of The Field.</p></div>
+    <div class="themes">
+      <span class="theme">Longing</span>
+      <span class="theme">Light &amp; shadow</span>
+      <span class="theme">Machines</span>
+      <span class="theme">Complicated love</span>
+    </div>
+    <div class="shead mt"><h2>She remembers. He searches.</h2><p>NYXY and LUCA are the yin and yang of The Field, opposite energies that define each other. She travels backward through time leaving traces of him; he moves forward, pulled toward her without knowing why. When their timelines meet in the center, the balance completes.</p></div>
+    <div class="pair">
+      <div class="c"><h3>NYXY</h3><p>Shadow. Inward gravity. She reaches and she remembers.</p></div>
+      <div class="c"><h3>LUCA</h3><p>Light. Outward motion. He searches and he responds.</p></div>
+    </div>
+    <p style="text-align:center;color:var(--muted);font-size:15px;margin:24px auto 0;max-width:560px">The whole story is a love story across time.</p>
+  </div>
+</section>
+
+<section id="character">
+  <div class="wrap">
+    <div class="shead"><div class="k">Character Design</div><h2>Meet NYXY.</h2><p>All white, all signal. The exact inverse of LUCA.</p></div>
+    <div class="feature"><img src="assets/nyxy_feature.jpg" alt="NYXY"></div>
+    <div class="bio"><p>White hood, platinum hair, mirrored goggles, hot pink. A monochrome alpine cyber-streetwear look, designed down to the boots.</p></div>
+    <div class="shead mt"><h2>All white, all signal.</h2></div>
     <div class="gal gal3">
       <div class="item"><div class="tile"><img src="assets/nyxy_full.jpg" alt="NYXY full body"></div><span class="cap">Full body</span></div>
       <div class="item"><div class="tile"><img src="assets/nyxy_threequarter.jpg" alt="NYXY three quarter"></div><span class="cap">Three quarter</span></div>
       <div class="item"><div class="tile"><img src="assets/nyxy_portrait_hood.jpg" alt="NYXY portrait"></div><span class="cap">Portrait</span></div>
     </div>
-
     <div class="shead mt"><h2>Every detail, considered.</h2><p>From the mirrored lens and pink lips down to the platform boots.</p></div>
     <div class="gal gal3">
       <div class="item"><div class="tile"><img src="assets/nyxy_detail_face.jpg" alt="goggles and lips"></div><span class="cap">Goggles &amp; lips</span></div>
@@ -115,7 +142,7 @@
 
 <section id="music">
   <div class="wrap">
-    <div class="shead"><div class="k">Music</div><h2>She makes her own sound.</h2><p>A music producer and DJ. Machines, longing, and complicated love, turned into songs.</p></div>
+    <div class="shead"><div class="k">Music</div><h2>She makes her own sound.</h2><p>Machines, longing, and complicated love, turned into songs.</p></div>
     <div class="cover" style="background-image:url('assets/nyxy_cover.jpg')"></div>
     <div class="tracks">
       <div class="track"><div class="tnum">01</div><div class="tinfo"><div class="tt">machine-girl</div><audio controls preload="none" src="assets/nyxy_machine_girl.mp3"></audio></div></div>
@@ -128,36 +155,19 @@
   </div>
 </section>
 
-<section id="world">
+<section id="epk">
   <div class="wrap">
-    <div class="shead"><div class="k">World</div><h2>Light's shadow.</h2><p>NYXY's half of The Field. Inward gravity to LUCA's outward motion.</p></div>
-    <div class="bio">
-      <p>NYXY is the shadow half of The Field, the mirror to LUCA's light. Where he is outward motion, she is inward gravity. She reveals truth by reflecting it back, the way her lenses give nothing away but the room returned.</p>
-      <p>Her work circles a few feelings on a loop: longing, light and shadow, machines, and complicated love.</p>
-    </div>
-
-    <div class="shead mt"><h2>What her world is made of.</h2></div>
+    <div class="shead"><div class="k">Press Kit</div><h2>Electronic Press Kit.</h2><p>A futuristic music producer and DJ. A machine-lit, melancholic electronic sound.</p></div>
     <div class="themes">
       <span class="theme">Longing</span>
       <span class="theme">Light &amp; shadow</span>
       <span class="theme">Machines</span>
       <span class="theme">Complicated love</span>
     </div>
-
-    <div class="shead mt"><h2>She remembers. He searches.</h2><p>NYXY and LUCA are the yin and yang of The Field, opposite energies that define each other. She travels backward through time leaving traces of him; he moves forward, pulled toward her without knowing why. When their timelines meet in the center, the balance completes.</p></div>
-    <div class="pair">
-      <div class="c"><h3>NYXY</h3><p>Shadow. Inward gravity. She reaches and she remembers.</p></div>
-      <div class="c"><h3>LUCA</h3><p>Light. Outward motion. He searches and he responds.</p></div>
-    </div>
-    <p style="text-align:center;color:var(--muted);font-size:15px;margin:24px auto 0;max-width:560px">The whole story is a love story across time.</p>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="shead"><div class="k">More</div><h2>The rest of her world.</h2></div>
+    <p class="contact" style="margin-top:30px"><a href="https://www.instagram.com/nyxyonline/" target="_blank" rel="noopener">Instagram @nyxyonline</a></p>
+    <p class="contact" style="margin-top:8px"><a href="mailto:cravinadventure@gmail.com">cravinadventure@gmail.com</a></p>
     <div class="more">
-      <a class="btn primary" href="https://cravinadventure.github.io/nyxy-epk/" target="_blank" rel="noopener">Press Kit &rarr;</a>
+      <a class="btn primary" href="https://cravinadventure.github.io/nyxy-epk/" target="_blank" rel="noopener">Open the full press kit &rarr;</a>
       <a class="btn ghost" href="https://cravinadventure.github.io/client-case-study-luca-immersive-world/" target="_blank" rel="noopener">Meet LUCA &rarr;</a>
       <a class="btn ghost" href="https://cravinadventure.github.io/client-case-studies/" target="_blank" rel="noopener">All case studies &rarr;</a>
     </div>
