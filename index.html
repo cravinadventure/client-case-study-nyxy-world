@@ -11,25 +11,41 @@
   body{background:var(--ink);color:var(--paper);font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
   .wrap{max-width:860px;margin:0 auto;padding:0 28px}
   a{color:inherit}
-  nav{position:sticky;top:0;z-index:50;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:16px 28px;background:radial-gradient(55% 160% at 50% 50%, rgba(108,92,231,.42), rgba(11,11,20,.88) 70%);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-  nav .brand{font-weight:800;letter-spacing:1.6px;font-size:13px;text-transform:uppercase}
+  nav{position:sticky;top:0;z-index:50;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:15px 28px;background:radial-gradient(55% 160% at 50% 50%, rgba(108,92,231,.42), rgba(11,11,20,.9) 70%);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  nav .brand{font-weight:800;letter-spacing:1.6px;font-size:12.5px;text-transform:uppercase}
   nav .brand span{color:var(--electric)}
-  nav .tag{font-size:11.5px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:var(--muted);text-align:right}
-  .hero{text-align:center;padding:90px 0 44px;background:radial-gradient(900px 440px at 50% -10%, rgba(255,92,171,.18), transparent 70%),linear-gradient(180deg,#1a1424 0%,var(--ink) 100%)}
-  .eyebrow{font-size:12.5px;font-weight:700;letter-spacing:3.5px;text-transform:uppercase;color:var(--pink);margin-bottom:20px}
+  nav .tag{font-size:11px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:var(--muted);text-align:right}
+  .subnav{position:sticky;top:50px;z-index:40;display:flex;gap:8px;justify-content:center;flex-wrap:wrap;padding:11px 16px;background:rgba(11,11,20,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .subnav a{font-size:12px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted);text-decoration:none;padding:7px 15px;border-radius:30px;transition:color .15s,background .15s}
+  .subnav a:hover{color:var(--paper);background:rgba(255,92,171,.14)}
+  .hero{text-align:center;padding:80px 0 40px;background:radial-gradient(900px 440px at 50% -10%, rgba(255,92,171,.18), transparent 70%),linear-gradient(180deg,#1a1424 0%,var(--ink) 100%)}
+  .eyebrow{font-size:12.5px;font-weight:700;letter-spacing:3.5px;text-transform:uppercase;color:var(--pink);margin-bottom:18px}
   .hero h1{font-size:clamp(40px,8vw,76px);line-height:.98;font-weight:800;letter-spacing:-2px}
   .hero .sub{max-width:540px;margin:20px auto 0;color:var(--muted);font-size:clamp(16px,2.2vw,20px)}
-  section{padding:60px 0;border-top:1px solid rgba(108,92,231,.08)}
-  .shead{text-align:center;max-width:620px;margin:0 auto 38px}
+  section{padding:58px 0;border-top:1px solid rgba(108,92,231,.1);scroll-margin-top:108px}
+  .shead{text-align:center;max-width:620px;margin:0 auto 36px}
   .shead .k{font-size:12px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--pink);margin-bottom:12px}
-  .shead h2{font-size:clamp(25px,3.8vw,36px);font-weight:800;letter-spacing:-.4px;line-height:1.12}
+  .shead h2{font-size:clamp(26px,4vw,40px);font-weight:800;letter-spacing:-.5px;line-height:1.1}
   .shead p{margin-top:14px;color:var(--muted);font-size:16px}
-  .feature{max-width:470px;margin:0 auto;border:1px solid var(--line);border-radius:18px;overflow:hidden;line-height:0}
+  .feature{max-width:460px;margin:0 auto 30px;border:1px solid var(--line);border-radius:18px;overflow:hidden;line-height:0}
   .feature img{width:100%;height:auto;display:block}
-  .bio{max-width:600px;margin:0 auto;text-align:center}
-  .bio p{font-size:17px;line-height:1.65;color:#d6d5e6;margin-bottom:16px}
+  .bio{max-width:600px;margin:0 auto 34px;text-align:center}
+  .bio p{font-size:16.5px;line-height:1.65;color:#d6d5e6;margin-bottom:14px}
   .bio p:last-child{margin-bottom:0}
-  .themes{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;max-width:600px;margin:0 auto}
+  .gal{display:grid;gap:14px;margin-bottom:14px}
+  .gal3{grid-template-columns:repeat(3,1fr)}
+  .item{display:flex;flex-direction:column;gap:9px}
+  .item .tile{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--paper);line-height:0}
+  .item img{width:100%;height:auto;display:block}
+  .item .cap{font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:var(--muted);text-align:center}
+  .cover{width:150px;height:150px;border-radius:16px;margin:0 auto 26px;background-size:cover;background-position:center 20%;border:1px solid var(--line)}
+  .tracks{max-width:560px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
+  .track{display:flex;gap:16px;align-items:flex-start;background:var(--charcoal);border:1px solid var(--line);border-radius:14px;padding:15px 18px}
+  .track .tnum{font-size:13px;font-weight:800;color:var(--pink);width:22px;flex:none;padding-top:2px}
+  .track .tinfo{flex:1;min-width:0}
+  .track .tt{font-size:16px;font-weight:700;margin-bottom:9px}
+  .track audio{width:100%;height:36px}
+  .themes{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;max-width:600px;margin:0 auto 30px}
   .theme{font-size:13px;font-weight:700;letter-spacing:.5px;padding:9px 16px;border-radius:30px;background:var(--charcoal);border:1px solid var(--line);color:#e7d6e6}
   .pair{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:640px;margin:0 auto;text-align:center}
   .pair .c{background:var(--charcoal);border:1px solid var(--line);border-radius:16px;padding:24px 20px}
@@ -40,11 +56,11 @@
   .btn.primary{background:var(--electric);color:#fff}
   .btn.primary:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(108,92,231,.4)}
   .btn.ghost{border:1.5px solid var(--line);color:var(--paper)}
-  .btn.ghost:hover{border-color:var(--electric)}
+  .btn.ghost:hover{border-color:var(--pink)}
   footer{padding:52px 0 70px;text-align:center;border-top:1px solid var(--line);color:var(--muted)}
   footer .brand{font-weight:800;letter-spacing:1.6px;text-transform:uppercase;color:var(--paper);font-size:14px}
-  footer a{color:var(--electric);text-decoration:none}
-  @media(max-width:600px){.pair{grid-template-columns:1fr}}
+  footer a{color:var(--pink);text-decoration:none}
+  @media(max-width:600px){.gal3{grid-template-columns:repeat(2,1fr)}.pair{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -53,52 +69,85 @@
   <div class="brand">CRAVIN' <span>ADVENTURE</span> STUDIOS</div>
   <div class="tag">Client Case Studies</div>
 </nav>
+<div class="subnav">
+  <a href="#character">Character</a>
+  <a href="#music">Music</a>
+  <a href="#world">World</a>
+</div>
+
 <header class="hero">
   <div class="wrap">
     <div class="eyebrow">NYXY · World Design</div>
-    <h1>Light's shadow.</h1>
-    <p class="sub">NYXY's half of The Field. Inward gravity to LUCA's outward motion.</p>
+    <h1>The world of NYXY.</h1>
+    <p class="sub">The character, the music, and the world she lives in. One futuristic producer and DJ, top to bottom.</p>
   </div>
 </header>
+
 <main>
-<section style="border-top:none;padding-top:46px">
-  <div class="wrap"><div class="feature"><img src="assets/nyxy_feature.jpg" alt="NYXY"></div></div>
-</section>
-<section style="border-top:none;padding-top:8px">
-  <div class="wrap"><div class="bio">
-    <p>NYXY is the shadow half of The Field, the mirror to LUCA's light. Where he is outward motion, she is inward gravity. She reveals truth by reflecting it back, the way her lenses give nothing away but the room returned.</p>
-    <p>Her work circles a few feelings on a loop: longing, light and shadow, machines, and complicated love.</p>
-  </div></div>
-</section>
-<section>
+<section id="character">
   <div class="wrap">
-    <div class="shead"><div class="k">Themes</div><h2>What her world is made of.</h2></div>
+    <div class="shead"><div class="k">Character</div><h2>Meet NYXY.</h2></div>
+    <div class="feature"><img src="assets/nyxy_feature.jpg" alt="NYXY"></div>
+    <div class="bio">
+      <p>NYXY is a futuristic music producer and DJ. All white hood, platinum hair, mirrored goggles, hot pink, the exact inverse of LUCA.</p>
+    </div>
+    <div class="gal gal3">
+      <div class="item"><div class="tile"><img src="assets/nyxy_full.jpg" alt="NYXY full body"></div><span class="cap">Full body</span></div>
+      <div class="item"><div class="tile"><img src="assets/nyxy_threequarter.jpg" alt="NYXY three quarter"></div><span class="cap">Three quarter</span></div>
+      <div class="item"><div class="tile"><img src="assets/nyxy_portrait_hood.jpg" alt="NYXY portrait"></div><span class="cap">Portrait</span></div>
+    </div>
+    <div class="gal gal3">
+      <div class="item"><div class="tile"><img src="assets/nyxy_detail_face.jpg" alt="goggles and lips"></div><span class="cap">Goggles &amp; lips</span></div>
+      <div class="item"><div class="tile"><img src="assets/nyxy_detail_hand.jpg" alt="pink nails"></div><span class="cap">Pink nails</span></div>
+      <div class="item"><div class="tile"><img src="assets/nyxy_detail_boot_front.jpg" alt="boot front"></div><span class="cap">Boot, front</span></div>
+      <div class="item"><div class="tile"><img src="assets/nyxy_detail_boot_side.jpg" alt="boot side"></div><span class="cap">Boot, side</span></div>
+      <div class="item"><div class="tile"><img src="assets/nyxy_detail_boot_heel.jpg" alt="heel logo"></div><span class="cap">Heel logo</span></div>
+      <div class="item"><div class="tile"><img src="assets/nyxy_detail_boot_sole.jpg" alt="sole"></div><span class="cap">Sole</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="music">
+  <div class="wrap">
+    <div class="shead"><div class="k">Music</div><h2>She makes her own sound.</h2><p>Machines, longing, and complicated love, turned into songs.</p></div>
+    <div class="cover" style="background-image:url('assets/nyxy_cover.jpg')"></div>
+    <div class="tracks">
+      <div class="track"><div class="tnum">01</div><div class="tinfo"><div class="tt">machine-girl</div><audio controls preload="none" src="assets/nyxy_machine_girl.mp3"></audio></div></div>
+      <div class="track"><div class="tnum">02</div><div class="tinfo"><div class="tt">light bending</div><audio controls preload="none" src="assets/nyxy_light_bending.mp3"></audio></div></div>
+      <div class="track"><div class="tnum">03</div><div class="tinfo"><div class="tt">the pull</div><audio controls preload="none" src="assets/nyxy_the_pull.mp3"></audio></div></div>
+      <div class="track"><div class="tnum">04</div><div class="tinfo"><div class="tt">critical damage</div><audio controls preload="none" src="assets/nyxy_critical_damage.mp3"></audio></div></div>
+      <div class="track"><div class="tnum">05</div><div class="tinfo"><div class="tt">firmware error</div><audio controls preload="none" src="assets/nyxy_firmware_error.mp3"></audio></div></div>
+      <div class="track"><div class="tnum">06</div><div class="tinfo"><div class="tt">wasn't mine</div><audio controls preload="none" src="assets/nyxy_wasnt_mine.mp3"></audio></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="world">
+  <div class="wrap">
+    <div class="shead"><div class="k">World</div><h2>Light's shadow.</h2></div>
+    <div class="bio">
+      <p>In the story, NYXY is the shadow half of The Field, the mirror to LUCA's light. Where he is outward motion, she is inward gravity. She reveals truth by reflecting it back.</p>
+    </div>
     <div class="themes">
       <span class="theme">Longing</span>
       <span class="theme">Light &amp; shadow</span>
       <span class="theme">Machines</span>
       <span class="theme">Complicated love</span>
     </div>
-  </div>
-</section>
-<section>
-  <div class="wrap">
-    <div class="shead">
-      <div class="k">Two Halves, One Force</div>
-      <h2>She remembers. He searches.</h2>
-      <p>NYXY and LUCA are the yin and yang of The Field, opposite energies that define each other. She travels backward through time leaving traces of him; he moves forward, pulled toward her without knowing why. When their timelines meet in the center, the balance completes.</p>
-    </div>
     <div class="pair">
       <div class="c"><h3>NYXY</h3><p>Shadow. Inward gravity. She reaches and she remembers.</p></div>
       <div class="c"><h3>LUCA</h3><p>Light. Outward motion. He searches and he responds.</p></div>
     </div>
+    <p style="text-align:center;color:var(--muted);font-size:15px;margin-top:24px;max-width:560px;margin-left:auto;margin-right:auto">Their timelines move toward each other until they meet. The whole story is a love story across time.</p>
   </div>
 </section>
+
 <section>
   <div class="wrap">
-    <div class="shead"><div class="k">The Other Half</div><h2>The whole story is a love story across time.</h2></div>
+    <div class="shead"><div class="k">More</div><h2>The rest of her world.</h2></div>
     <div class="more">
-      <a class="btn primary" href="https://cravinadventure.github.io/client-case-study-luca-immersive-world/" target="_blank" rel="noopener">Enter The Field &rarr;</a>
+      <a class="btn primary" href="https://cravinadventure.github.io/nyxy-epk/" target="_blank" rel="noopener">Press Kit &rarr;</a>
+      <a class="btn ghost" href="https://cravinadventure.github.io/client-case-study-luca-immersive-world/" target="_blank" rel="noopener">Meet LUCA &rarr;</a>
       <a class="btn ghost" href="https://cravinadventure.github.io/client-case-studies/" target="_blank" rel="noopener">All case studies &rarr;</a>
     </div>
   </div>
